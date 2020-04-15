@@ -36,10 +36,8 @@ namespace Entidades
         /// 
         /// </summary>
         /// <param name="numero"></param>
-        public Numero(double numero)
-        {
-            this.numero = numero;
-        }
+        public Numero(double numero) :this(numero + "")
+        { }
         /// <summary>
         /// 
         /// </summary>
@@ -47,6 +45,22 @@ namespace Entidades
         public Numero(string strNumero)
         {
             SetNumero = strNumero;
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="strNumero"></param>
+        /// <returns></returns>
+        private double ValidarNumero(string strNumero)
+        {
+            double num = 0, aux;
+
+            bool succes = double.TryParse(strNumero, out aux);
+            if (succes == true)
+            {
+                num = aux;
+            }
+            return num;
         }
         /// <summary>
         /// 
@@ -65,7 +79,7 @@ namespace Entidades
                 }
                 else
                 {
-                    return "";
+                    return "Valor Invalido";
                 }
             }
             return numero.ToString();
@@ -115,22 +129,6 @@ namespace Entidades
             return binario;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="strNumero"></param>
-        /// <returns></returns>
-        private double ValidarNumero(string strNumero)
-        {
-            double num = -1, aux;
-
-            bool succes = double.TryParse(strNumero, out aux);
-            if (succes == true)
-            {
-                num = aux;
-            }
-            return num;
-        }
 
         #endregion
 
