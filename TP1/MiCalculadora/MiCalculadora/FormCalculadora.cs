@@ -18,7 +18,7 @@ namespace MiCalculadora
             InitializeComponent();
         }
         /// <summary>
-        /// 
+        /// llama al metodo Operar
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -29,14 +29,15 @@ namespace MiCalculadora
             lblResultado.Text = resultado.ToString();
         }
         /// <summary>
-        /// 
+        /// metodo que llama al metodo estatico Operar de calculadora
         /// </summary>
-        /// <param name="numero1"></param>
-        /// <param name="numero2"></param>
-        /// <param name="operador"></param>
-        /// <returns></returns>
+        /// <param name="numero1">objeto Numero 1</param>
+        /// <param name="numero2">objeto Numero 2</param>
+        /// <param name="operador"> operador </param>
+        /// <returns> el retorno del metodo al que se invoca </returns>
         private static double Operar(string numero1, string numero2, string operador)
         {
+            // para que funcione con numeros con coma, usar la ',' y no el '.'
             double resultado;
             Numero num1 = new Numero(numero1);
             Numero num2 = new Numero(numero2);
@@ -44,7 +45,7 @@ namespace MiCalculadora
             return resultado;
         }
         /// <summary>
-        /// 
+        /// llama al metodo Limpiar
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -53,7 +54,7 @@ namespace MiCalculadora
             Limpiar();
         }
         /// <summary>
-        /// 
+        /// deja los textos vacios
         /// </summary>
         private void Limpiar()
         {
@@ -63,13 +64,18 @@ namespace MiCalculadora
             cmbOperador.Text = "";
         }
 
+        /// <summary>
+        /// cierra el formulario
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
         /// <summary>
-        /// 
+        /// llama a la funcion DecimalBinario del objeto tipo Numero
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
@@ -80,7 +86,7 @@ namespace MiCalculadora
         }
 
         /// <summary>
-        /// 
+        /// llama a la funcion BinarioDecimal del objeto tipo Numero
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
