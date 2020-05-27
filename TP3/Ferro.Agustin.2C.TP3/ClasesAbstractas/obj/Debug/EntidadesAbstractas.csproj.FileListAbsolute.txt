@@ -1,0 +1,9 @@
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesAbstractas\bin\Debug\ClasesAbstractas.dll
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesAbstractas\bin\Debug\ClasesAbstractas.pdb
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesAbstractas\bin\Debug\Excepciones.dll
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesAbstractas\bin\Debug\Excepciones.pdb
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesAbstractas\obj\Debug\EntidadesAbstractas.csprojAssemblyReference.cache
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesAbstractas\obj\Debug\EntidadesAbstractas.csproj.CoreCompileInputs.cache
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesAbstractas\obj\Debug\EntidadesAbstractas.csproj.CopyComplete
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.dll
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesAbstractas\obj\Debug\ClasesAbstractas.pdb

@@ -1,0 +1,13 @@
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.csprojAssemblyReference.cache
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.csproj.CoreCompileInputs.cache
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesInstanciables\bin\Debug\ClasesInstanciables.dll
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesInstanciables\bin\Debug\ClasesInstanciables.pdb
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesInstanciables\bin\Debug\Archivos.dll
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesInstanciables\bin\Debug\ClasesAbstractas.dll
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesInstanciables\bin\Debug\Excepciones.dll
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesInstanciables\bin\Debug\Archivos.pdb
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesInstanciables\bin\Debug\ClasesAbstractas.pdb
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesInstanciables\bin\Debug\Excepciones.pdb
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.csproj.CopyComplete
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.dll
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\ClasesInstanciables\obj\Debug\ClasesInstanciables.pdb

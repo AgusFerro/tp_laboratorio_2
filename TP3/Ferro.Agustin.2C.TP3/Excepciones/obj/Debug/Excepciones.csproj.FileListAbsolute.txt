@@ -1,0 +1,6 @@
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Excepciones\bin\Debug\Excepciones.dll
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Excepciones\bin\Debug\Excepciones.pdb
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Excepciones\obj\Debug\Excepciones.csprojAssemblyReference.cache
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Excepciones\obj\Debug\Excepciones.csproj.CoreCompileInputs.cache
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Excepciones\obj\Debug\Excepciones.dll
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Excepciones\obj\Debug\Excepciones.pdb

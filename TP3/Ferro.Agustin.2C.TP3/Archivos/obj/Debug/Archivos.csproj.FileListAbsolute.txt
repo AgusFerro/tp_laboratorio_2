@@ -1,0 +1,6 @@
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Archivos\bin\Debug\Archivos.dll
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Archivos\bin\Debug\Archivos.pdb
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Archivos\obj\Debug\Archivos.csprojAssemblyReference.cache
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Archivos\obj\Debug\Archivos.csproj.CoreCompileInputs.cache
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Archivos\obj\Debug\Archivos.dll
+C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Archivos\obj\Debug\Archivos.pdb
