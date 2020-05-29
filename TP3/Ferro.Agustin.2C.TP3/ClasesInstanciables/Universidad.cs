@@ -8,5 +8,9 @@ namespace ClasesInstanciables
 {
     public class Universidad
     {
+        #region
+        public enum EClases
+        {Programacion,Laboratorio,Legislacion,SPD}
+        #endregion
     }
 }

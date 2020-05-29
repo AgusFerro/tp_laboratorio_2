@@ -8,5 +8,6 @@ namespace ClasesInstanciables
 {
     public class Jornada
     {
+
     }
 }

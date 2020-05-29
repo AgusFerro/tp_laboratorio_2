@@ -132,10 +132,10 @@ namespace EntidadesAbstractas
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine($"{this.Nombre}");
-            sb.AppendLine($"{this.Apellido}");
-            sb.AppendLine($"{this.Nacionalidad}");
-            sb.AppendLine($"{this.DNI}");
+            sb.AppendLine($"Nombre: {this.Nombre}");
+            sb.AppendLine($"Apellido: {this.Apellido}");
+            sb.AppendLine($"Nacionalidad: {this.Nacionalidad}");
+            sb.AppendLine($"DNI: {this.DNI}");
 
             return sb.ToString();
         }

@@ -12,5 +12,9 @@ namespace Excepciones
         { }
         public DniInvalidoException(string mensaje) : base(mensaje)
         { }
+        public DniInvalidoException(string mensaje, Exception innerException) : base(mensaje,innerException)
+        { }
+        public DniInvalidoException(Exception innerException) : this("Error en DNI", innerException)
+        { }
     }
 }
