@@ -50,6 +50,7 @@ namespace ClasesInstanciables
             }
         }
         #endregion
+
         #region Metodos
         private Jornada()
         {
@@ -64,8 +65,7 @@ namespace ClasesInstanciables
         {
             Texto txt = new Texto();
             bool success = false;
-            //string path = "Jornada.txt";
-            string path = String.Format("{0}\\Jornada.txt", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+            string path = @"C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Jornada.txt";
             txt.Guardar(path, jornada.ToString());
             success = true;
             return success;
@@ -74,8 +74,7 @@ namespace ClasesInstanciables
         {
             Texto txt = new Texto();
             string dato;
-            //string path = "Jornada.txt";
-            string path = String.Format("{0}\\Jornada.txt", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+            string path = @"C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Jornada.txt";
             txt.Leer(path, out dato);
             return dato;
         }

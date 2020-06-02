@@ -15,6 +15,7 @@ namespace ClasesInstanciables
         private Queue<Universidad.EClases> clasesDelDia;
         private static Random random;
         #endregion
+
         #region Metodos
         static Profesor() 
         {
@@ -79,6 +80,7 @@ namespace ClasesInstanciables
             return MostrarDatos();
         }
         #endregion
+
         #region Operadores
         public static bool operator ==(Profesor i, Universidad.EClases clase)
         {

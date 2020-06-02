@@ -17,6 +17,7 @@ namespace ClasesInstanciables
         private Universidad.EClases clasesQueToma;
         private EEstadoCuenta estadoCuenta;
         #endregion
+
         #region Metodos
         public Alumno() : base()
         { }
@@ -49,6 +50,7 @@ namespace ClasesInstanciables
             return MostrarDatos();
         }
         #endregion
+
         #region Operadores
         public static bool operator ==(Alumno a, Universidad.EClases clases)
         {

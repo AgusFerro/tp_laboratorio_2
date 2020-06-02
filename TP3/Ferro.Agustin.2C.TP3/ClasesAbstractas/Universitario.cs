@@ -11,6 +11,7 @@ namespace EntidadesAbstractas
         #region Atributos
         private int legajo;
         #endregion
+
         #region Metodos
         public Universitario() : base()
         { }
@@ -46,6 +47,7 @@ namespace EntidadesAbstractas
         }
 
         #endregion
+
         #region Operadores
         public static bool operator ==(Universitario pg1, Universitario pg2)
         {

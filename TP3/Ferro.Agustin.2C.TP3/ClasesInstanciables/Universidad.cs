@@ -104,8 +104,7 @@ namespace ClasesInstanciables
         {
             Xml<Universidad> xml = new Xml<Universidad>();
             bool success = false;
-            //string path = "Universidad.xml";
-            string path = String.Format("{0}\\Universidad.xml", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+            string path = @"C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Universidad.xml";
             success = xml.Guardar(path, uni);
             return success;
         }
@@ -113,7 +112,6 @@ namespace ClasesInstanciables
         {
             Xml<Universidad> xml = new Xml<Universidad>();
             Universidad u = new Universidad();
-            //string path = "Universidad.xml";
             string path = String.Format("{0}\\Universidad.xml", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
             xml.Leer(path, out u);
             return u;
@@ -148,23 +146,16 @@ namespace ClasesInstanciables
         }
         public static Profesor operator ==(Universidad u, EClases clase)
         {
-            Profesor p = null;
+            Profesor p;
             foreach(Profesor profesor in u.Instructores)
             {
                 if(profesor == clase)
                 {
                     p = profesor;
-                    break;
+                    return p;
                 }
             }
-            if (p != null)
-            {
-                return p;
-            }
-            else
-            {
-                throw new SinProfesorException();
-            }
+            throw new SinProfesorException();
         }
         public static bool operator !=(Universidad g, Alumno a)
         {
