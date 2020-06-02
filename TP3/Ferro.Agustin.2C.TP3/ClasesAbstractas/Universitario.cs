@@ -26,8 +26,10 @@ namespace EntidadesAbstractas
         {
             StringBuilder sb = new StringBuilder();
 
-            sb.AppendLine($"{base.ToString()}");
-            sb.AppendLine($"Legajo: {this.legajo}");
+            sb.AppendLine($"NOMBRE COMPLETO: {this.Apellido}, {this.Nombre}");
+            sb.AppendLine($"NACIONALIDAD: {this.Nacionalidad}");
+            sb.AppendLine("");
+            sb.AppendLine($"LEGAJO : {this.legajo}");
 
             return sb.ToString();
         }

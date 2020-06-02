@@ -35,8 +35,8 @@ namespace ClasesInstanciables
             StringBuilder sb = new StringBuilder();
 
             sb.AppendLine($"{base.MostrarDatos()}");
-            sb.AppendLine($"Clases que toma: {this.clasesQueToma}");
-            sb.AppendLine($"Estado de cuenta: {this.estadoCuenta}");
+            sb.AppendLine($"ESTADO DE CUENTA: {this.estadoCuenta}");
+            sb.AppendLine($"CLASES QUE TOMA: {this.clasesQueToma}");
 
             return sb.ToString();
         }
