@@ -16,6 +16,9 @@ namespace ClasesInstanciables
         #endregion
 
         #region Propiedades
+        /// <summary>
+        /// Propiedad que retorna o setea el atributo alumnos
+        /// </summary>
         public List<Alumno> Alumnos
         {
             get
@@ -27,6 +30,9 @@ namespace ClasesInstanciables
                 this.alumnos = value;
             }
         }
+        /// <summary>
+        /// Propiedad que retorna o setea el atributo clase
+        /// </summary>
         public Universidad.EClases Clase
         {
             get
@@ -38,6 +44,9 @@ namespace ClasesInstanciables
                 this.clase = value;
             }
         }
+        /// <summary>
+        /// Propiedad que retorna o setea el atributo instructor
+        /// </summary>
         public Profesor Instructor
         {
             get
@@ -52,15 +61,28 @@ namespace ClasesInstanciables
         #endregion
 
         #region Metodos
+        /// <summary>
+        /// Constructor privado de Jornada que inicializa la Lista de Alumnos
+        /// </summary>
         private Jornada()
         {
             this.Alumnos = new List<Alumno>();
         }
+        /// <summary>
+        /// Constructor con parametros de Jornada
+        /// </summary>
+        /// <param name="clase">EClases clase</param>
+        /// <param name="instructor">Profesor instructor</param>
         public Jornada(Universidad.EClases clase ,Profesor instructor) : this()
         {
             this.Instructor = instructor;
             this.Clase = clase;
         }
+        /// <summary>
+        /// Metodo estatico que guarda los datos de una Jornada en un archivo
+        /// </summary>
+        /// <param name="jornada">Jornada jornada</param>
+        /// <returns>bool</returns>
         public static bool Guardar(Jornada jornada)
         {
             Texto txt = new Texto();
@@ -70,6 +92,10 @@ namespace ClasesInstanciables
             success = true;
             return success;
         }
+        /// <summary>
+        /// Metodo estatico que lee un archivo y devuelve un string con los datos de una jornada
+        /// </summary>
+        /// <returns>string con los datos</returns>
         public static string Leer()
         {
             Texto txt = new Texto();
@@ -78,6 +104,10 @@ namespace ClasesInstanciables
             txt.Leer(path, out dato);
             return dato;
         }
+        /// <summary>
+        /// Sobrecarga del metodo ToString que devuelve un string con los datos de Jornada
+        /// </summary>
+        /// <returns></returns>
         public override string ToString()
         {
             StringBuilder sb = new StringBuilder();
@@ -92,9 +122,16 @@ namespace ClasesInstanciables
 
             return sb.ToString();
         }
+
         #endregion
 
         #region Operadores
+        /// <summary>
+        /// Operador que devuelve true si un objeto Alumno esta adentro de la Lista de Alumnos de Jornada
+        /// </summary>
+        /// <param name="j">Jornada j</param>
+        /// <param name="a">Alumno a</param>
+        /// <returns>bool</returns>
         public static bool operator ==(Jornada j, Alumno a)
         {
             bool success = false;
@@ -109,10 +146,22 @@ namespace ClasesInstanciables
 
             return success;
         }
+        /// <summary>
+        /// Operador que devuelve true si un objeto Alumno no esta adentro de la Lista de Alumnos de Jornada
+        /// </summary>
+        /// <param name="j">Jornada j</param>
+        /// <param name="a">Alumno a</param>
+        /// <returns>bool</returns>
         public static bool operator !=(Jornada j, Alumno a)
         {
             return !(j == a);
         }
+        /// <summary>
+        /// Operador que agrega un objeto Alumno en la Lista del Alumnos de Jornada
+        /// </summary>
+        /// <param name="j">Jornada j</param>
+        /// <param name="a">Alumno a</param>
+        /// <returns>objeto Jornada</returns>
         public static Jornada operator +(Jornada j, Alumno a)
         {
             if(j != a)
@@ -122,6 +171,7 @@ namespace ClasesInstanciables
 
             return j;
         }
+
         #endregion
     }
 }

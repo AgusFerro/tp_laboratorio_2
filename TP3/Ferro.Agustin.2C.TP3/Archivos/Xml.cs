@@ -11,6 +11,12 @@ namespace Archivos
 {
     public class Xml<T> : IArchivo<T>
     {
+        /// <summary>
+        /// Metodo que guarda en formato XML un objeto
+        /// </summary>
+        /// <param name="texto">string path del archivo xml</param>
+        /// <param name="datos">T datos</param>
+        /// <returns>bool</returns>
         public bool Guardar(string texto, T datos)
         {
             XmlSerializer ser = new XmlSerializer(typeof(T));
@@ -31,7 +37,12 @@ namespace Archivos
             }
             return success;
         }
-
+        /// <summary>
+        /// Metodo que lee un archivo XML
+        /// </summary>
+        /// <param name="texto">string path del archivo</param>
+        /// <param name="datos">T datos</param>
+        /// <returns>bool y T datos</returns>
         public bool Leer(string texto, out T datos)
         {
             XmlSerializer ser = new XmlSerializer(typeof(T));

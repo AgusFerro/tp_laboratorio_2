@@ -17,18 +17,35 @@ namespace ClasesInstanciables
         #endregion
 
         #region Metodos
+        /// <summary>
+        /// Constructor estatico de Profesor que inicializa el atributo estatico random
+        /// </summary>
         static Profesor() 
         {
             random = new Random();
         }
+        /// <summary>
+        /// Constructor por defecto privado de Profesor
+        /// </summary>
         private Profesor() : base()
         { }
+        /// <summary>
+        /// Constructor con parametros de Profesor
+        /// </summary>
+        /// <param name="id">int id</param>
+        /// <param name="nombre">string nombre</param>
+        /// <param name="apellido">string apellido</param>
+        /// <param name="dni">string dni</param>
+        /// <param name="nacionalidad">ENacionalidad nacionalidad</param>
         public Profesor(int id, string nombre, string apellido, string dni, ENacionalidad nacionalidad)
             : base(id,nombre,apellido,dni,nacionalidad)
         { 
             this.clasesDelDia = new Queue<Universidad.EClases>();
             _randomClases();
         }
+        /// <summary>
+        /// Metodo que carga dos veces el atributo clasesDelDia de forma aleatoria
+        /// </summary>
         private void _randomClases()
         {
             for(int i = 0; i < 2; i++)
@@ -52,6 +69,10 @@ namespace ClasesInstanciables
                 }
             } 
         }
+        /// <summary>
+        /// Sobrecarga del metodo de Universitario que devuelve un string con los datos de Profesor
+        /// </summary>
+        /// <returns>string con los datos</returns>
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -64,6 +85,10 @@ namespace ClasesInstanciables
             }
             return sb.ToString();
         }
+        /// <summary>
+        /// Sobrecarga del metodo de Universitario que devuelve un string con las clases que da el Profesor
+        /// </summary>
+        /// <returns>string con las clases que da</returns>
         protected override string ParticiparEnClase()
         {
             StringBuilder sb = new StringBuilder();
@@ -75,13 +100,24 @@ namespace ClasesInstanciables
             }
             return sb.ToString();
         }
+        /// <summary>
+        /// Sonbrecarga del metodo ToString que devuelve un string de los datos de Profesor
+        /// </summary>
+        /// <returns>string con los datos</returns>
         public override string ToString()
         {
             return MostrarDatos();
         }
+
         #endregion
 
         #region Operadores
+        /// <summary>
+        /// Operador que devuelve true si un profesor da esa clase
+        /// </summary>
+        /// <param name="i">Profesor i</param>
+        /// <param name="clase">EClases clase</param>
+        /// <returns>boll</returns>
         public static bool operator ==(Profesor i, Universidad.EClases clase)
         {
             bool success = false;
@@ -96,10 +132,17 @@ namespace ClasesInstanciables
 
             return success;
         }
+        /// <summary>
+        /// Devuelve true si un profesor no da esa clase
+        /// </summary>
+        /// <param name="i">Profesor i</param>
+        /// <param name="clase">EClases clase</param>
+        /// <returns>bool</returns>
         public static bool operator !=(Profesor i, Universidad.EClases clase)
         {
             return !(i == clase);
         }
+
         #endregion
     }
 }

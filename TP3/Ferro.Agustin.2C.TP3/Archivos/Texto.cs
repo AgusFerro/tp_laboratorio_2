@@ -10,6 +10,12 @@ namespace Archivos
 {
     public class Texto : IArchivo<string>
     {
+        /// <summary>
+        /// Metodo que guarda un string en un texto
+        /// </summary>
+        /// <param name="texto">string path del texto</param>
+        /// <param name="datos">string datos</param>
+        /// <returns>bool</returns>
         public bool Guardar(string texto, string datos)
         {
             StreamWriter sw = new StreamWriter(texto);
@@ -30,7 +36,12 @@ namespace Archivos
             }
             return success;
         }
-
+        /// <summary>
+        /// Metodo que lee un archivo
+        /// </summary>
+        /// <param name="texto">string path del texto</param>
+        /// <param name="datos">string datos</param>
+        /// <returns>bool y el string con los datos</returns>
         public bool Leer(string texto, out string datos)
         {
             StreamReader sr = new StreamReader(texto);
