@@ -54,9 +54,9 @@
       <Project>{9de33fed-dd0f-466a-9f3f-e6b4823ca097}</Project>
       <Name>Archivos</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ClasesAbstractas\EntidadesAbstractas.csproj">
+    <ProjectReference Include="..\ClasesAbstractas\ClasesAbstractas.csproj">
       <Project>{cffa9a24-ff65-4429-b1bb-865b7d7c416d}</Project>
-      <Name>EntidadesAbstractas</Name>
+      <Name>ClasesAbstractas</Name>
     </ProjectReference>
     <ProjectReference Include="..\ClasesInstanciables\ClasesInstanciables.csproj">
       <Project>{3e51cb7d-8526-4bc9-a681-4c07234ebfe9}</Project>

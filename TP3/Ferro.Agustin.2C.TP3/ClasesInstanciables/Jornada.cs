@@ -87,7 +87,8 @@ namespace ClasesInstanciables
         {
             Texto txt = new Texto();
             bool success = false;
-            string path = @"C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Jornada.txt";
+            //string path = @"C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Jornada.txt";
+            string path = String.Format("{0}\\Jornada.txt", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
             txt.Guardar(path, jornada.ToString());
             success = true;
             return success;
@@ -100,7 +101,8 @@ namespace ClasesInstanciables
         {
             Texto txt = new Texto();
             string dato;
-            string path = @"C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Jornada.txt";
+            //string path = @"C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Jornada.txt";
+            string path = String.Format("{0}\\Jornada.txt", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
             txt.Leer(path, out dato);
             return dato;
         }

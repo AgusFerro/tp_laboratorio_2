@@ -1,12 +1,12 @@
 JORNADA:
-CLASE DE:Programacion POR NOMBRE COMPLETO: Lopez, Juan
+CLASE DE:Programacion POR NOMBRE COMPLETO: Juarez, Roberto
 NACIONALIDAD: Argentino
 
-LEGAJO : 1
+LEGAJO : 2
 
 CLASES DEL DIA:
-Legislacion
 Programacion
+Legislacion
 
 NOMBRE COMPLETO: Lopez, Juan
 NACIONALIDAD: Argentino

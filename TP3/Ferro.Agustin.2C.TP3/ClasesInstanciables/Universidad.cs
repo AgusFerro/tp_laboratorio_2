@@ -135,7 +135,8 @@ namespace ClasesInstanciables
         {
             Xml<Universidad> xml = new Xml<Universidad>();
             bool success = false;
-            string path = @"C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Universidad.xml";
+            //string path = @"C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Universidad.xml";
+            string path = String.Format("{0}\\Universidad.xml", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
             success = xml.Guardar(path, uni);
             return success;
         }
@@ -147,6 +148,7 @@ namespace ClasesInstanciables
         {
             Xml<Universidad> xml = new Xml<Universidad>();
             Universidad u = new Universidad();
+            //string path = @"C:\Users\agusf\Source\Repos\Ferro.Agustin.2C.TP3\Universidad.xml";
             string path = String.Format("{0}\\Universidad.xml", Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
             xml.Leer(path, out u);
             return u;
