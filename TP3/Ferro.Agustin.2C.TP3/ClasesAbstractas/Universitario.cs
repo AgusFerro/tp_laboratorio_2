@@ -12,6 +12,14 @@ namespace EntidadesAbstractas
         private int legajo;
         #endregion
 
+        #region Propiedad exclusiva solo para Deserializar
+        public int Legajo
+        {
+            get{ return this.legajo; }
+            set { this.legajo = value; }
+        }
+        #endregion
+
         #region Metodos
         /// <summary>
         /// Constructor por defecto de Universitario

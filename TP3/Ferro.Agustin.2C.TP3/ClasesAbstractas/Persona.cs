@@ -7,9 +7,13 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Xml.Schema;
 using Excepciones;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace EntidadesAbstractas
 {
+    [XmlInclude(typeof(Universitario))]
+
     public abstract class Persona
     {
         #region Atributos
@@ -38,20 +42,6 @@ namespace EntidadesAbstractas
             }
         }
         /// <summary>
-        /// propiedad que establece o devuelve el int DNI
-        /// </summary>
-        public int DNI
-        {
-            get
-            {
-                return this.dni;
-            }
-            set
-            { 
-                this.dni = ValidarDni(this.nacionalidad, value);
-            }
-        }
-        /// <summary>
         /// propiedad que establece o devuelve un valor del enumerado ENacionalidad
         /// </summary>
         public ENacionalidad Nacionalidad
@@ -63,6 +53,20 @@ namespace EntidadesAbstractas
             set
             {
                 this.nacionalidad = value;
+            }
+        }
+        /// <summary>
+        /// propiedad que establece o devuelve el int DNI
+        /// </summary>
+        public int DNI
+        {
+            get
+            {
+                return this.dni;
+            }
+            set
+            { 
+                this.dni = ValidarDni(this.nacionalidad, value);
             }
         }
         /// <summary>
