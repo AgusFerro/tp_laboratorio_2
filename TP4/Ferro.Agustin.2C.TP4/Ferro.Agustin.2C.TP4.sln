@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainCorreo", "MainCorreo\MainCorreo.csproj", "{3455E025-CE39-4D0B-84A3-B76201908867}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{957BBF9D-8C8A-42EB-87CB-DB2A2063F1FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest", "UnitTest\UnitTest.csproj", "{2A9A1FE6-2886-4F9C-8B40-1EDC6F4B9322}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3455E025-CE39-4D0B-84A3-B76201908867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3455E025-CE39-4D0B-84A3-B76201908867}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3455E025-CE39-4D0B-84A3-B76201908867}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3455E025-CE39-4D0B-84A3-B76201908867}.Release|Any CPU.Build.0 = Release|Any CPU
+		{957BBF9D-8C8A-42EB-87CB-DB2A2063F1FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{957BBF9D-8C8A-42EB-87CB-DB2A2063F1FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{957BBF9D-8C8A-42EB-87CB-DB2A2063F1FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{957BBF9D-8C8A-42EB-87CB-DB2A2063F1FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A9A1FE6-2886-4F9C-8B40-1EDC6F4B9322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A9A1FE6-2886-4F9C-8B40-1EDC6F4B9322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A9A1FE6-2886-4F9C-8B40-1EDC6F4B9322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A9A1FE6-2886-4F9C-8B40-1EDC6F4B9322}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {646F7B73-6BED-48FF-986F-EC99800DDA79}
+	EndGlobalSection
+EndGlobal
