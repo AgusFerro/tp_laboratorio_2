@@ -10,6 +10,12 @@ namespace Entidades
 {
     public static class GuardaString
     {
+        /// <summary>
+        /// Metodo de extension que graba el String que lo llama en el archivo ingresado por parametro
+        /// </summary>
+        /// <param name="texto"></param>
+        /// <param name="archivo"></param>
+        /// <returns></returns>
         public static bool Guardar(this string texto, string archivo)
         {
             bool success = false;

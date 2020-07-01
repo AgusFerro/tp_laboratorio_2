@@ -9,17 +9,25 @@ namespace Entidades
 {
     public static class PaqueteDAO
     {
+        public delegate void DelegadoBase(string mensaje, Exception e);
+
         #region Atributos
         private static SqlConnection conexion;
         private static SqlCommand comando;
         #endregion
         #region Metodos
-
+        /// <summary>
+        /// Metodo estatico que instancia el atributo estatico conexion
+        /// </summary>
         static PaqueteDAO()
         {
             conexion = new SqlConnection("Data Source = localhost; Database = correo-sp-2017; Trusted_Connection=True;");
         }
-
+        /// <summary>
+        /// Metodo que devuelve true si un Paquete pudo insertarse en la Base
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public static bool Insertar(Paquete p)
         {
             bool success = false;
@@ -38,7 +46,7 @@ namespace Entidades
             catch(Exception e)
             {
                 success = false;
-                throw new Exception("No se pudo insertar el Paquete en la tabla",e);
+                InformarException($"No se pudo insertar el Paquete {p.TrackingID} en la tabla", e);
             }
             finally
             {
@@ -47,5 +55,9 @@ namespace Entidades
             return success;
         }
         #endregion
+        /// <summary>
+        /// Evento que informa si se produce una Excepcion el en metodo PaqueteDAO.Insertar(Paquete p)
+        /// </summary>
+        public static event DelegadoBase InformarException;
     }
 }
