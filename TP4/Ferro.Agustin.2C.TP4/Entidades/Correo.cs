@@ -45,7 +45,7 @@ namespace Entidades
             StringBuilder sb = new StringBuilder();
             foreach(Paquete p in Paquetes)
             {
-                sb.Append(String.Format("{0} para {1} ({2})",p.TrackingID,p.DireccionEntrega,p.Estado.ToString()));
+                sb.AppendLine(String.Format("{0} para {1} ({2})",p.TrackingID,p.DireccionEntrega,p.Estado.ToString()));
             }
             return sb.ToString();
         }
